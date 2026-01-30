@@ -1,37 +1,31 @@
-<<<<<<< HEAD
-# Hackathon 17 - Tesla Shop Backend
+## Despliegue en Render
 
-**Tema:** E-commerce de productos Tesla (Model Y, Cybertruck accesorios, merch Elon Musk/Optimus).
+**URL del Backend (Render)**: https://tesla-shop-backend.onrender.com
 
-**Tecnologías:**
-- NodeJS + Express
-- Sequelize (ORM OOP-like) + MySQL
-- JWT autenticación/autorización
-- Stripe pagos
-- CRUD completo, middleware, roles (user/admin)
+**Base de datos**: PostgreSQL gratuito de Render
 
-**Instalación:**
-1. Clona repo
-2. cp .env.sample .env (completa DB y Stripe/JWT)
-3. npm install
-4. npm run dev
+**Notas importantes**:
+- Plan Free → primera petición puede tardar 20-60 segundos (cold start normal).
+- Usa Postman para pruebas completas.
 
-**Endpoints clave (Postman):**
-- POST /api/auth/register {email, password}
-- POST /api/auth/login → obtén token
-- GET /api/products → lista productos
-- POST /api/products → crear (admin)
-- POST /api/orders/checkout → Stripe session (con token)
+## Pruebas validadas (Postman)
 
-**Presentación:**
-- Código fuente: server.js, models, controllers, etc.
-- OOP: Models como clases Sequelize
-- JWT: Middleware auth/admin
-- Pruebas: Registro/login, CRUD productos, pago Stripe
-- Escalabilidad: Estructura MVC-like
+1. Registro: POST /api/auth/register
+2. Login: POST /api/auth/login → token JWT
+3. CRUD Productos: GET /api/products, POST /api/products (con token admin)
+4. Checkout Stripe: POST /api/orders/checkout (con token)
 
-🚀🔥
-=======
-# tesla-shop-backend
-Backend e-commerce Tesla Shop
->>>>>>> aecf7f6934966b050cb02f675244ff4ff4a55f28
+## Cumplimiento de consignas (Trabajo Final / Hackathon Final)
+
+- Backend NodeJS + Express + Sequelize (programación orientada a objetos en models)
+- Autenticación y autorización con JWT
+- Operaciones CRUD completas
+- Gestión eficiente de datos en base de datos PostgreSQL
+- Integración de pagos con Stripe
+- Código escalable, estructura clara (MVC-like)
+- Desplegado en Render con base de datos en la nube
+- Pruebas y validación en ambiente real
+
+Enlace GitHub: https://github.com/DereckAlbrectNarro/tesla-shop-backend
+
+¡Listo 🚀🔥!

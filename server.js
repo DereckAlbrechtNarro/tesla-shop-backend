@@ -21,6 +21,6 @@ app.get('/', (req, res) => res.send('Tesla Shop Backend - Hackathon 17'));
 sequelize.sync({ alter: true }).then(() => {
   console.log('Modelos sincronizados');
   app.listen(process.env.PORT || 5000, () => {
-    console.log(`Servidor en puerto ${process.env.PORT || 5000}`);
+    console.log(`Servidor en puerto ${process.env.PORT || 5000} 🚀🔥`);
   });
 }).catch(err => console.log('Error sync DB:', err));
