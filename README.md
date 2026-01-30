@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hackathon 17 - Tesla Shop Backend
 
 **Tema:** E-commerce de productos Tesla (Model Y, Cybertruck accesorios, merch Elon Musk/Optimus).
@@ -30,3 +31,7 @@
 - Escalabilidad: Estructura MVC-like
 
 🚀🔥
+=======
+# tesla-shop-backend
+Backend e-commerce Tesla Shop
+>>>>>>> aecf7f6934966b050cb02f675244ff4ff4a55f28
